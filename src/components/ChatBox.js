@@ -1,6 +1,9 @@
+
 import React from "react";
 import Message from "./Message";
 import SendMessage from "./SendMessage";
+import React, { useEffect, useRef, useState } from "react";
+const scroll = useRef();
 
 const ChatBox = () => {
   return (
@@ -9,6 +12,8 @@ const ChatBox = () => {
         <Message />
       </div>
       <SendMessage />
+      <span ref={scroll}></span>
+   <SendMessage scroll={scroll} />
     </main>
   );
 };
