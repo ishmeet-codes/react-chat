@@ -1,8 +1,7 @@
-
-import React from "react";
+import React , { useEffect, useRef, useState } from "react";
 import Message from "./Message";
 import SendMessage from "./SendMessage";
-import React, { useEffect, useRef, useState } from "react";
+
 const scroll = useRef();
 
 const ChatBox = () => {
